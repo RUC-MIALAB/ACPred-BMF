@@ -27,7 +27,7 @@
 
 ## Detailed Document
 
-To make it more convenient to use and understand the details of ACPred-BMF, we have prepared a comprehensive documentation for ACPred-BMF.[ACPred-BMF-Docs](https://psaia.readthedocs.io/en/latest/?badge=latest)
+To make it more convenient to use and understand the details of ACPred-BMF, we have prepared a comprehensive documentation for ACPred-BMF.[ACPred-BMF-Docs](https://acpred-bmf.readthedocs.io/en/latest/)
 
 ## Web Server
 
