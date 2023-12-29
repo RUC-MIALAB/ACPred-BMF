@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Han, Bingqing
+AU  - Zhao, Nan
+AU  - Zeng, Chengshi
+AU  - Mu, Zengchao
+AU  - Gong, Xinqi
+PY  - 2022
+DA  - 2022/12/19
+TI  - ACPred-BMF: bidirectional LSTM with multiple feature representations for explainable anticancer peptide prediction
+JO  - Scientific Reports
+SP  - 21915
+VL  - 12
+IS  - 1
+AB  - Cancer has become a major factor threatening human life and health. Under the circumstance that traditional treatment methods such as chemotherapy and radiotherapy are not highly specific and often cause severe side effects and toxicity, new treatment methods are urgently needed. Anticancer peptide drugs have low toxicity, stronger efficacy and specificity, and have emerged as a new type of cancer treatment drugs. However, experimental identification of anticancer peptides is time-consuming and expensive, and difficult to perform in a high-throughput manner. Computational identification of anticancer peptides can make up for the shortcomings of experimental identification. In this study, a deep learning-based predictor named ACPred-BMF is proposed for the prediction of anticancer peptides. This method uses the quantitative and qualitative properties of amino acids, binary profile feature to numerical representation for the peptide sequences. The Bidirectional LSTM network architecture is used in the model, and the attention mechanism is also considered. To alleviate the black-box problem of deep learning model prediction, we visualized the automatically extracted features and used the Shapley additive explanations algorithm to determine the importance of features to further understand the anticancer peptide mechanism. The results show that our method is one of the state-of-the-art anticancer peptide predictors. A web server as the implementation of ACPred-BMF that can be accessed via: http://mialab.ruc.edu.cn/ACPredBMFServer/.
+SN  - 2045-2322
+UR  - https://doi.org/10.1038/s41598-022-24404-1
+DO  - 10.1038/s41598-022-24404-1
+ID  - Han2022
+ER  - 
