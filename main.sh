@@ -12,9 +12,9 @@ for file in "$data_dir"/*; do
         if [[ "$file" == *.fasta ]]; then
 	    filename=$(basename "${file%.*}")
 	    if [ $model_type == "main" ]; then
-                 /extendplus/apps/miniconda3/envs/py38env/bin/python server_code_main.py $file $result_dir $filename
+                 python server_code_main.py $file $result_dir $filename
 	    elif [ $model_type == "alternative" ]; then
-                 /extendplus/apps/miniconda3/envs/py38env/bin/python server_code_alternative.py $file $result_dir $filename
+                 python server_code_alternative.py $file $result_dir $filename
 	    else
 		 echo "Wrong model type!"
             fi 
