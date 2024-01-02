@@ -5,6 +5,11 @@ result_dir="$main_directory/result"
 
 if [ ! -d "$result_dir" ]; then
 	mkdir $result_dir
+else
+    cd $result_dir
+    chmod u+x *
+    rm -rf *
+    cd $main_directory
 fi
 
 for file in "$data_dir"/*; do
