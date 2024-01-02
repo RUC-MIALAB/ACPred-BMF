@@ -9,7 +9,7 @@ else
     cd $result_dir
     chmod u+x *
     rm -rf *
-    cd $main_directory
+    cd ..
 fi
 
 for file in "$data_dir"/*; do
