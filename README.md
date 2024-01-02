@@ -27,11 +27,11 @@
 
 ## Detailed Document
 
-To make it more convenient to use and understand the details of ACPred-BMF, we have prepared a comprehensive documentation for ACPred-BMF.[ACPred-BMF-Docs](https://acpred-bmf.readthedocs.io/en/latest/)
+To make it more convenient to use and understand the details of ACPred-BMF, we have prepared a comprehensive documentation for ACPred-BMF. [ACPred-BMF-Docs](https://acpred-bmf.readthedocs.io/en/latest/)
 
 ## Web Server
 
-We have made an online server where you can upload data and get results through ACPred-BMF. The server's link is provided here:[ACPred-BMF-Server](http://mialab.ruc.edu.cn/ACPredBMFServer/)
+We have made an online server where you can upload data and get results through ACPred-BMF. The server's link is provided here: [ACPred-BMF-Server](http://mialab.ruc.edu.cn/ACPredBMFServer/)
 
 ## License and credits
 
@@ -47,6 +47,10 @@ If you use this code in any future publications, please cite the following publi
 This program needs fasta file corresponding to the peptide sequences to be predicted, you can organize the fasta files and place them in the 'data/' folder.
 
 ## Necessary Program
+
+**Recommand Dependencies：**
+
+* Python 3.8
 
 We have placed the required Python packages in requirements.txt. You can directly use the the command below to install them.
 
