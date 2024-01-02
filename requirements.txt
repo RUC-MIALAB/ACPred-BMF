@@ -1,6 +1,6 @@
-numpy
-pandas
-tensorflow
-sklearn
-keras
+numpy == 1.22.3
+pandas == 1.3.4
+tensorflow == 2.8.0
+scikit-learn == 1.0.1
+keras == 2.8.0
 
