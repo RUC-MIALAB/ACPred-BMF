@@ -31,7 +31,9 @@ To make it more convenient to use and understand the details of ACPred-BMF, we h
 
 ## Web Server
 
-We have made an online server where you can upload data and get results through ACPred-BMF. The server's link is provided here: [ACPred-BMF-Server](http://mialab.ruc.edu.cn/ACPredBMFServer/)
+We have made an online server where you can upload data and get results through ACPred-BMF. The server's link is provided here: [ACPredBMF-MIALAB-Server](http://mialab.ruc.edu.cn/ACPredBMFServer/)
+
+We have also leveraged [Hugging Face – The AI community building the future.](https://huggingface.co/) to establish a server that is easier to operate. The server's link is provided here: [ACPred-BMF - a Hugging Face Space by MIALAB](https://huggingface.co/spaces/MIALAB/ACPred-BMF)
 
 ## License and credits
 
