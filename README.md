@@ -64,11 +64,9 @@ If you encounter any issues during the installation process, please contact us f
 
 ## Run
 
-Put fasta files of peptides in the folder named /data/.
+You can place any number of FASTA files into the data/ folder. Then, you can choose between the following two models to run:
 
-You can choose between the following two models to run:
-
-**1.[Main_model]**: This model was developed on the main dataset, which used ACPs/AMPs as positive/negative samples.
+**1.[Main_model]**: This model was developed on the main dataset, which used ACPs/AMPs(anti-microbial peptides) as positive/negative samples.
 
 ```
 bash main.sh main

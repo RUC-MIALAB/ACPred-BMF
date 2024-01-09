@@ -2,4 +2,4 @@
 License
 ==================
 
-The project PSAIA is licensed under `MIT <https://github.com/RUC-MIALAB/PSAIA/blob/main/LICENSE>`_.
+The project ACPred-BMF is licensed under `MIT <https://github.com/RUC-MIALAB/ACPred-BMF/blob/main/LICENSE>`_.

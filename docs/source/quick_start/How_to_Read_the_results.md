@@ -9,36 +9,24 @@ After calculating, you will get the results in the folder: /result/.
 Here is the structure of result file:
 
 ```
-chain  {id}: 
-patch {number}
-
-Each line consists of 6 elements:
-1、Patch's residue number            2、Residue's name              3、Residue's chain ID
-4、Patch's center residue number     5、Center residue's name       4、Center residue's chain ID
+index,sequence,prediction
 ```
+
+**"index"** represents the index or number of the peptide, **"sequence"** represents the amino acid sequence of the peptide, and **"prediction"** represents the predicted classification result for that peptide. '1' indicates that the sequence is predicted to be an anticancer peptide; '0' indicates that the sequence is predicted to be a non-anticancer peptide.
 
 Example:
 
 ```
-chain  E: 
-patch1
-res: 85 ILE E   CENTER res: 85 ILE E
-res: 64 ASP E   CENTER res: 85 ILE E
-res: 84 LYS E   CENTER res: 85 ILE E
-res: 62 THR E   CENTER res: 85 ILE E
-res: 109 SER E   CENTER res: 85 ILE E
-res: 108 LEU E   CENTER res: 85 ILE E
-res: 107 LYS E   CENTER res: 85 ILE E
-res: 86 ALA E   CENTER res: 85 ILE E
-res: 87 LYS E   CENTER res: 85 ILE E
-res: 61 THR E   CENTER res: 85 ILE E
-res: 65 VAL E   CENTER res: 85 ILE E
-res: 106 LEU E   CENTER res: 85 ILE E
-res: 83 LEU E   CENTER res: 85 ILE E
-res: 66 VAL E   CENTER res: 85 ILE E
-res: 60 VAL E   CENTER res: 85 ILE E
-res: 88 VAL E   CENTER res: 85 ILE E
-res: 33 LEU E   CENTER res: 85 ILE E
+index,sequence,prediction
+0,FLWWLFKWAWK,1
+1,FAKLAKKALAKLL,1
+2,GLFDIVKKIAGHIAGSI,1
+3,VNFKKLLGKLLKVVK,1
+4,WKKIPKFLHLLKKF,1
+5,EQCGRQAGGKLCPNNLCCSQYGWCGSSDDYCSPSKNCQSNCKGGG,1
+6,EADEPLWLYKGDNIERAPTTADHPILPSIIDDVKLDPNRRYA,1
+7,FVGLAKVAAHVVPAIAEHF,1
+8,FAKLLAKLAKKFAL,1
+9,ARSYGNGVYCNNKKCWVNRGEATQSIIGGMISGWASGLAGM,1
 ```
 
-##### Remark : You can modify the output format of the result in work/sort_patch.sh.

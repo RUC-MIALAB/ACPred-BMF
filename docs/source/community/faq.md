@@ -6,24 +6,26 @@
 
 ## General Questions
 
-**1. What are the merits of PSAIA in respect of functionality, performance, and/or accuracy?**
+**1. What are the merits of ACPred-BMF in respect of functionality, performance, and/or accuracy?**
 
-Users are referred to the introduction of features of PSAIA in the [PSAIA-README](https://github.com/RUC-MIALAB/PSAIA/blob/main/README.md).
+Users are referred to the introduction of features of ACPred-BMF in the [ACPred-BMF-README](https://github.com/RUC-MIALAB/ACPred-BMF/blob/main/README.md).
 
 ## Setting up jobs
 
-**1. Does PSAIA support Windows?**
+**1. Does ACPred-BMF support Windows?**
 
-No, the main implementation programs of PSAIA are currently shell files, and it does not support Windows operating system at the moment.
+Yes, the main implementation programs of ACPred-BMF are currently python files, You can run the corresponding files in the Python editor on Windows according to the order specified in main.sh.
 
-**2. Can PSAIA calculate several pdb files simultaneously for input?**
+**2. Can ACPred-BMF predict several fasta files simultaneously for input?**
 
-Yes,you just need to put the pdb files into data/pdb/.
+Yes, you just need to put the fasta files into data/.
 
 ## Failed jobs
 
-**1. Why can't I use Naccess or Qcontacts?**
+**1. Why am I receiving an error when I run the program?**
 
-You need to first check if you have followed the instructions about Naccess in the [PSAIA-README](https://github.com/RUC-MIALAB/PSAIA/blob/main/README.md). If following the document instructions still doesn't work, please contact the [PSAIA developer](13168zsl@ruc.edu.cn).
+First, you need to check if you have installed the prerequisite environment as instructed. Secondly, you need to verify if the contents of your input file are correct. Third, you should ensure that your input file is placed in the data folder. Finally, you need to confirm if you are running the main file in the specified format according to the instructions. [ACPred-BMF-README](https://github.com/RUC-MIALAB/ACPred-BMF/blob/main/README.md)
+
+If it still doesn't work, please contact the [ACPred-BMF developer](13168zsl@ruc.edu.cn).
 
 [back to top](#frequently-asked-questions)

@@ -1,25 +1,25 @@
-.. PSAIA documentation master file, created by
+.. ACPred-BMF documentation master file, created by
    sphinx-quickstart on Fri Mar 11 10:42:27 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 =================================================
-PSAIA Documentation
+ACPred-BMF Documentation
 =================================================
 
-PSAIA is a program to calculate PSAIA of proteins and then give a series of residue patchs which may contain binding sites of proteins.
+ACPred-BMF server is used for anticancer peptide(ACP) prediction.
 
 .. toctree::
    :maxdepth: 3
    :caption: Quick Start
 
-   quick_start/easy_install_PSAIA
+   quick_start/easy_install_ACPred-BMF
    quick_start/How_to_Read_the_results
-   quick_start/hands_on_PSAIA
+   quick_start/hands_on_ACPred-BMF
 
 .. toctree::
    :maxdepth: 2
-   :caption: Citing PSAIA
+   :caption: Citing ACPred-BMF
 
    CITATIONS
 

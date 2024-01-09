@@ -1,8 +1,8 @@
-# Contributing to PSAIA
+# Contributing to ACPred-BMF
 
-First of all, thank you for taking time to make contributions to PSAIA!
+First of all, thank you for taking time to make contributions to ACPred-BMF!
 This file provides the more technical guidelines on how to realize it.
-For more non-technical aspects, please refer to the [PSAIA Contribution Guide](./community/contribution_guide.md)
+For more non-technical aspects, please refer to the [ACPred-BMF Contribution Guide](./community/contribution_guide.md)
 
 ## Table of Contents
 
@@ -14,40 +14,43 @@ For more non-technical aspects, please refer to the [PSAIA Contribution Guide](.
 
 ## Got a question?
 
-Please referring to our GitHub [issue tracker](https://github.com/RUC-MIALAB/PSAIA/issues), and our developers are willing to help.
+Please referring to our GitHub [issue tracker](https://github.com/RUC-MIALAB/ACPred-BMF/issues), and our developers are willing to help.
 If you find a bug, you can help us by submitting an issue to our GitHub Repository. Even better, you can submit a Pull Request with a patch. You can request a new feature by submitting an issue to our GitHub Repository.
 If you would like to implement a new feature, please submit an issue with a proposal for your work first, and that ensures your work collaborates with our development road map well. For a major feature, first open an issue and outline your proposal so that it can be discussed. This will also allow us to better coordinate our efforts, prevent duplication of work, and help you to craft the change so that it is successfully accepted into the project.
 
 ## Structure of the package
 
-Please refer to [our instructions](./quick_start/easy_install.md) on how to installing PSAIA.
-The source code of PSAIA is based on several modules. Under the PSAIA root directory, there are the following folders:
+Please refer to [our instructions](./quick_start/easy_install_ACPred-BMF.md) on how to installing ACPred-BMF.
+The source code of ACPred-BMF is based on several modules. Under the ACPred-BMF root directory, there are the following folders:
 
-- `docs`: documents and supplementary info about PSAIA;
-- `examples`: some examples showing the usage of PSAIA;
-- data: some test cases of PSAIA;
-- result: result files of test cases;
-- work: main shell files of PSAIA;
+- `docs`: documents and supplementary info about ACPred-BMF;
+- data: input files of ACPred-BMF;
+- result: result files of input;
+- main.sh: main shell file of ACPred-BMF;
+- server_code_alternative.py: [alternative dataset] python file of ACPred-BMF;
+- server_code_main.py: [main dataset] python file of ACPred-BMF;
+- requirements.txt: necessary python packages of ACPred-BMF;
+- main.h5: The model parameters trained on the main dataset;
+- alt.h5: The model parameters trained on the alternative dataset;
 
 For those who are interested in the source code, the following figure shows the structure of the source code.
 
 ```
-|-- main                         A basic file including 
-|   |                           (1) activate naccess file
-|   |                           (2) run the files clean_file.sh, divide_patch.sh, and sort_patch.sh in order.
-|-- clean_file                  clean useless file in directory
-|-- divide_patch                divide patch based on contact,calculate PSAIA scores for every patch.
-|-- sort_patch                  sort patch's PSAIA score, give a ranking of patches,take the top patches 
+|-- main.sh                      A basic file including 
+|   |                           (1) clean up the result files obtained from the previous run.
+|   |                           (2) run through the fasta files in the data folder by server_code_main.py or server_code_alternative.py.  
+|-- server_code_main.py         [main dataset] python file of ACPred-BMF.
+|-- server_code_alternative.py  [alternative dataset] python file of ACPred-BMF.
 ```
 
 ## Submitting an Issue
 
-Before you submit an issue, please search the issue tracker, and maybe your problem has been discussed and fixed. You can [submit new issues]((https://github.com/RUC-MIALAB/PSAIA/issues)/new/choose) by filling our issue forms.
+Before you submit an issue, please search the issue tracker, and maybe your problem has been discussed and fixed. You can [submit new issues]((https://github.com/RUC-MIALAB/ACPred-BMF/issues)/new/choose) by filling our issue forms.
 To help us reproduce and confirm a bug, please provide a test case and building environment in your issue.
 
 ## Submitting a Pull Request
 
-1. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the [PSAIA repository](https://github.com/RUC-MIALAB/PSAIA). If you already had an existing fork, [sync](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) the fork to keep your modification up-to-date.
+1. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the [ACPred-BMF repository](https://github.com/RUC-MIALAB/ACPred-BMF). If you already had an existing fork, [sync](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) the fork to keep your modification up-to-date.
 
 2. Pull your forked repository, create a new git branch, and make your changes in it:
 
@@ -66,7 +69,7 @@ To run a subset of unit test, use `ctest -R <test-match-pattern>` to perform tes
     git push origin my-fix-branch
     ```
 
-6. In GitHub, send a pull request (PR) with `RUC-MIALAB/PSAIA:PSAIA` as the base repository. It is required to document your PR following [our guidelines](#commit-message-guidelines).
+6. In GitHub, send a pull request (PR) with `RUC-MIALAB/ACPred-BMF:ACPred-BMF` as the base repository. It is required to document your PR following [our guidelines](#commit-message-guidelines).
 
 7. After your pull request is merged, you can safely delete your branch and sync the changes from the main (upstream) repository:
 
