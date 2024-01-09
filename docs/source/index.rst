@@ -14,8 +14,8 @@ ACPred-BMF server is used for anticancer peptide(ACP) prediction.
    :caption: Quick Start
 
    quick_start/easy_install_ACPred-BMF
-   quick_start/How_to_Read_the_results
    quick_start/hands_on_ACPred-BMF
+   quick_start/How_to_Read_the_results
 
 .. toctree::
    :maxdepth: 2
