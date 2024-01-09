@@ -1,8 +1,8 @@
 # ACPred-BMF-Manual
 
-[![release: v0.0.1 (shields.io)](https://img.shields.io/badge/release-v0.0.1-blue)](https://github.com/RUC-MIALAB/PSAIA/releases)
+[![release: v0.0.1 (shields.io)](https://img.shields.io/badge/release-v0.0.1-blue)](https://github.com/RUC-MIALAB/ACPred-BMF/releases)
 
-[![Documentation Status](https://readthedocs.org/projects/psaia/badge/?version=latest)](https://psaia.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/psaia/badge/?version=latest)](https://acpred-bmf.readthedocs.io/en/latest/?badge=latest)
 
 # Table of contents
 
@@ -11,7 +11,7 @@
 - [Web Server](#web-server)
 - [License and credits](#license-and-credits)
 - [Data](#data)
-- [Necessary Program](#necessary-program)
+- [Requirements](#requirements)
 - [Run](#run)
 - [Contact](#contact)
 
@@ -19,7 +19,7 @@
 
 ## Introduction
 
-**ACPred-BMF: bidirectional LSTM with multiple feature representations for explainable anticancer peptide prediction**, Bingqing Han, Nan Zhao, Chengshi Zeng, Xinqi Gong. [Paper](https://www.nature.com/articles/s41598-022-24404-1)
+**ACPred-BMF: bidirectional LSTM with multiple feature representations for explainable anticancer peptide prediction**, Bingqing Han, Nan Zhao, Chengshi Zeng, Xinqi Gong. [[Paper]](https://www.nature.com/articles/s41598-022-24404-1)
 
 ![Introduction](paper_first.png)
 
@@ -48,7 +48,15 @@ If you use this code in any future publications, please cite the following publi
 
 This program needs fasta file corresponding to the peptide sequences to be predicted, you can organize the fasta files and place them in the 'data/' folder.
 
-## Necessary Program
+**Benchmark dataset:**
+
+In this study, we use the benchmark datasets collected by Agrawal et al. in AntiCP2.0[[23]](https://www.nature.com/articles/s41598-022-24404-1#ref-CR23) for model training and result comparisons. The benchmark datasets could be downloaded from https://webs.iiitd.edu.in/raghava/anticp2/download.php. It consisted of the main dataset and the alternate dataset.
+
+(i) In the main dataset, ACPs verified in the experiment were taken as positive samples, and anti-microbial peptides (AMPs) were taken as non-ACPs, i.e., negative samples. It contains 1722 peptides of which 861 ACPs and 861 non-ACPs (or AMPs).
+
+(ii) In the alternate dataset, ACPs and random peptides were regarded as positive samples and negative samples, respectively. It contains 1940 peptides, including 970 experimentally validated ACPs and 970 random peptides.
+
+## Requirements
 
 **Recommand Dependencies：**
 
@@ -66,7 +74,7 @@ If you encounter any issues during the installation process, please contact us f
 
 You can place any number of FASTA files into the data/ folder. Then, you can choose between the following two models to run:
 
-**1.[Main_model]**: This model was developed on the main dataset, which used ACPs/AMPs(anti-microbial peptides) as positive/negative samples.
+**1.[Main_model]**: This model was developed on the main dataset, which used ACPs/AMPs as positive/negative samples.
 
 ```
 bash main.sh main
